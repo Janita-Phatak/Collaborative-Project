@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rebook</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 <style>
-    body{
+   body{
         width: 100%;
         margin: auto;
     }
@@ -36,29 +36,19 @@
     }
     nav div p::after{
         content: "";
-    position: relative;
-    border: solid #fff;
-    border-width: 0 2px 2px 0;
-    display: inline-block;
-    padding: 3px;
-    left: 8px;
-    top: -2px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+        position: relative;
+        border: solid #fff;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        left: 8px;
+        top: -2px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
     }
     
-    /* .fa{
-        padding-left: 3px;
-        font-size: 18px;
-
-    }
-    .fa:hover {
-            transform: translateY(-50%) rotate(180deg); 
-        } */
     nav ul{
         display: flex;
-        /* align-items: center;
-        justify-content: right; */
         list-style-type: none;
         margin-top: 0px;
         margin-bottom: 0px;    
@@ -133,7 +123,7 @@
     .nav-item:nth-child(6)::after{
         content: none;
     }
-    li::after {
+    nav ul li::after {
         content: "";
         position: absolute;
         top: 14px;
@@ -141,6 +131,155 @@
         width: 1px;
         height: 30px;
         background: #555;
+    }
+    #features{
+        height: 86px;
+        position: sticky;
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #features>div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 85%;
+    }
+    #brand{
+        display: block;
+        flex-basis: 35.666667%;
+        max-width: 35.666667%;
+        position: relative;
+    }
+    #brand img{
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        vertical-align: baseline;
+        cursor: pointer;
+    }
+    #features ul{
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+        list-style: none;
+        font: inherit;
+        vertical-align: baseline;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding-left:10px;
+        margin-right:50px;
+    }
+    #features ul li{
+        color: #0c2340;
+        font-weight: b;
+        font-size: 14px;
+        font-family: Roboto, sans-serif;
+        width: auto;
+        padding:30px 0px 25px 20px;
+        display: inline-block;
+        line-height: 1;
+        vertical-align: baseline;
+        border-bottom: 5px solid transparent;
+        text-align: center;
+    }
+    #features ul li:last-child{
+        color: #c40c2f;;
+    }
+    #search{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+        margin-top: 0;
+        position: relative;
+        border-color: #000;
+        vertical-align: baseline;
+        color: #0c2340;
+        font-family: Roboto, sans-serif;
+        margin-left: 40px; 
+        
+    }
+    #search i{
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-image: url(https://imagescdn.reebok.in/img/app/brands/superapp/Icons/icon_sprite.png);
+        background-repeat: no-repeat;
+        background-position: 5% 35.25%;
+        cursor: pointer;
+        background-size: 200%;
+        max-width: 100%;   
+    }
+    #search input{   
+        box-sizing: border-box;
+        border: none;
+        background: transparent;
+        padding: 7px 0;
+        font-size: 14px; 
+        outline: 0;
+        width: 150px;
+    }
+    #search input[type="text"]::placeholder {
+        color: black;
+    }
+    button{
+        background-color: #c40c2f; 
+        padding-left: 5px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        border-radius: 23px;
+        cursor: pointer;
+        border: none;
+        vertical-align: baseline;
+        padding: 4px 25px 4px 5px;
+        margin-left: 19px;
+        width: 620px;
+    }
+    button i{
+        height: 40px;
+        width: 50px;
+        background-image: url(https://imagescdn.reebok.in/img/app/brands/superapp/Icons/icon_sprite.png);
+        background-position: 3.5% 43.75%;
+        background-size: 100%;
+        display: inline-block;
+        max-width: 100%;
+        background-repeat: no-repeat;
+    }
+    button div{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        flex-flow: row wrap;
+        width: 100%;
+        vertical-align: baseline;
+        text-align: left;
+    }
+    button  div span{
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 900;
+        font-family: Roboto, sans-serif;
+        line-height: normal;
+        vertical-align: baseline;
+        letter-spacing: 0.00938em;
+        width: 100%;
+    }
+    button div p{
+        font-family: Roboto, sans-serif;
+        color: #fff;
+        opacity: 80%;
+        font-size: 10px;
+        font-weight: normal;
+        line-height: normal;
+        margin-top: 0px;
+        margin-top: 2px;
+        margin-bottom: 1px;
     }
 
 </style>
@@ -158,6 +297,34 @@
             <li class="nav-item"><i></i></li>
         </ul>
     </nav>
-    
+    <div id="features">
+        <div>
+            <div id="brand">
+                <img src="https://i.ibb.co/n1D07N9/header-brand-logo-RBK.png" alt="rebook_logo.png">
+            </div>
+            <span></span>
+            <ul>
+                <li>new</li>
+                <li>men</li>
+                <li>women</li>
+                <li>icons</li>
+                <li>sports</li>
+                <li>classics</li>
+                <li>sale</li>
+            </ul>
+            <div id="search">
+                <i></i>
+                <input type="text" placeholder="Search" value="">
+            </div>
+            <button type="button">
+                <i></i>
+                <div>
+                    <span>Express Delivery</span>
+                    <p>Select your nearest store ></p>
+                </div>    
+            </button>
+        </div>
+       
+    </div>
 </body>
 </html>
