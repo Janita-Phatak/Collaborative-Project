@@ -281,7 +281,60 @@
         margin-top: 2px;
         margin-bottom: 1px;
     }
+    #container{
+        position: relative;
+        width: 85%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .card img{
+        width: 100%;
+        position: relative;
+         
+    }
+    .card div{ 
+        font-style: normal;
+        text-align: center;
+        text-transform: uppercase;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        padding: 3px;
+        position: relative;
+    }
+    .card div span{
+        background-image: linear-gradient(285deg, rgb(46, 164, 224), rgb(49, 198, 132)); 
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0;
+        top: 16px;
+        z-index: 2;
+        height: 25px; 
+        border-radius: 0 2px 2px 0; 
+        font-size: 11px;
+        font-family: Roboto, sans-serif;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.5px;
+        padding: 0px 7px;
+        vertical-align: baseline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+   .card .whishlist{
+        width: 20%;
+        position: absolute;
+        right: 0px;
+        top: 5px;
+        z-index: 2; 
+        vertical-align: baseline;
+    }
+        
 </style>
 <body>
     <nav>
@@ -324,7 +377,24 @@
                 </div>    
             </button>
         </div>
-       
+    </div>
+    <div id="container">
+        <div class="card">
+            <div>
+                <span>I AM THE NEW</span>
+                <img  class="whishlist" src="https://i.ibb.co/QKh49zt/wishlist-icon-black.png" alt="wishlist">
+            </div>
+            <img src="https://i.ibb.co/cNH6jTw/shoes1.jpg" alt="shoes.png">   
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/Kxtg42b/shoes3.jpg" alt="shoes.png">
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/nwcb348/shoes4.jpg" alt="shoes.png">
+        </div>
+        <div class="card">
+            <img src="https://i.ibb.co/0cQz0zK/shoes2.jpg" alt="shoes.png">
+        </div>
     </div>
 </body>
 </html>
