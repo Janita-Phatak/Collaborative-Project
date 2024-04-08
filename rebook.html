@@ -283,12 +283,13 @@
     }
     #container{
         position: relative;
-        width: 85%;
+        width: 95%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         margin-top: 20px;
+        box-shadow: 0px 4px 20px 0px; 
     }
    .card img{
         width: 100%;
@@ -412,8 +413,13 @@
             1px  0px 0px rgba(0, 0, 0, 0.1),  /* Bottom-left shadow */
             0px  1px 0px rgba(0, 0, 0, 0.1);  /* Bottom-right shadow */
     } 
+    #full{
+        border:5px solid black;
+        margin:10px;
+    }
 </style>
 <body>
+    <div id="full">
     <nav>
         <div>
             <p>more brands&nbsp;</p>
@@ -464,23 +470,65 @@
             <img src="https://i.ibb.co/cNH6jTw/shoes1.jpg" alt="shoes.png">
             <div id="product_details">
                 <div>
-                    <h3>Sandals &amp; Slippers</h3>
+                  <h3>Sandals &amp; Slippers</h3>
                     <img src="https://i.ibb.co/vcJTXyH/v-hicon-similar.png" alt="similar.png">
                 </div>
                 <h2 class="name">Rebook Mens Sprinter Sandal</h2>
-                <h2 id="price"> &#8377; &nbsp;2,799</h2>
+                <h2 id="price"> &#8377; &nbsp;4,999</h2>
             </div>   
         </div>
         
         <div class="card">
-            <img src="https://i.ibb.co/Kxtg42b/shoes3.jpg" alt="shoes.png">
+            <div>
+                <span>I AM THE NEW</span>
+                <img  class="whishlist" src="https://i.ibb.co/QKh49zt/wishlist-icon-black.png" alt="wishlist">
+            </div>
+            <img src="https://imagescdn.reebok.in/img/app/product/9/929486-11771795.jpg?q=75&auto=format&w=387">
+            <div id="product_details">
+                <div>
+                    <h3>WOMEN T-SHIRTS</h3>
+                    <img src="https://i.ibb.co/vcJTXyH/v-hicon-similar.png" alt="similar.png">
+                </div>
+                <h2 class="name">Rebook WoMens Gym T-shirts</h2>
+                <h2 id="price"> &#8377; &nbsp;1,999</h2>
+            </div>   
         </div>
+
         <div class="card">
+            <div>
+                <span>I AM THE NEW</span>
+                <img  class="whishlist" src="https://i.ibb.co/QKh49zt/wishlist-icon-black.png" alt="wishlist">
+            </div>
             <img src="https://i.ibb.co/nwcb348/shoes4.jpg" alt="shoes.png">
+            <div id="product_details">
+                <div>
+    
+                    <h3>Women Snickers</h3>
+                    <img src="https://i.ibb.co/vcJTXyH/v-hicon-similar.png" alt="similar.png">
+                </div>
+                <h2 class="name">Rebook Womens Snickers</h2>
+                <h2 id="price"> &#8377; &nbsp;2,799</h2>
+            </div>   
         </div>
+
         <div class="card">
-            <img src="https://i.ibb.co/0cQz0zK/shoes2.jpg" alt="shoes.png">
+            <div>
+                <span>I AM THE NEW</span>
+                <img  class="whishlist" src="https://i.ibb.co/QKh49zt/wishlist-icon-black.png" alt="wishlist">
+            </div>
+            <img src="https://imagescdn.reebok.in/img/app/product/9/937050-11955231.jpg?q=75&auto=format&w=387" alt="leggins.png">
+            <div id="product_details">
+                <div>
+    
+                    <h3>LEGGINGS & TIGHTS</h3>
+                    <img src="https://i.ibb.co/vcJTXyH/v-hicon-similar.png" alt="similar.png">
+                </div>
+                <h2 class="name">Womes Leggins</h2>
+                <h2 id="price"> &#8377; &nbsp;1999</h2>
+            </div>   
         </div>
+
+    </div>
     </div>
 </body>
 </html>
